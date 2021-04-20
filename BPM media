@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(void) {
+  double rc1=82,jc1=100,rec1=96,rc2=87,jc2=105,rec2=98,rc3=90,jc3=107,rec3=100,rc4=84,jc4=112,rec4=105,rc5=93,jc5=103,rec5=99,rc6=89,jc6=106,rec6=100,repousoBPM, jogoBPM, recuBPM,mediaBPM;
+
+  printf("\n\nForam entrevistados 6 crianças, de ambos os sexos, de 4 a 9 anos de idade.");
+  printf("\n\nFase 1 – Repouso: na qual o indivíduo passava seis minutos sem realizar qualquer tipo de atividade\nFase 2 – Jogo: dez minutos de duração de toda partida\nFase 3 – Recuperação: com seis minutos de  repouso  após");
+  printf("\n\n       Tabela de resultado");
+  printf("\n\n       Repouso  jogo    recuperação");
+
+  repousoBPM=(rc1+rc2+rc3+rc4+rc5+rc6)/6;
+  jogoBPM=(jc1+jc2+jc3+jc4+jc5+jc6)/6;
+  recuBPM=(rec1+rec2+rec3+rec4+rec5+rec6)/6;
+
+mediaBPM=(repousoBPM+jogoBPM+recuBPM)/3;
+
+  printf("\n   BPM Medio %.2lf | %.2lf | %.2lf\n",repousoBPM,jogoBPM,recuBPM);
+  printf("\n\n       Primeira analise -Media BPM");
+  printf("\n\n%.2lf",mediaBPM);
+  
+  
+  return 0;
+}
